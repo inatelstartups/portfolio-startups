@@ -4775,7 +4775,7 @@ footer {
 
 .portfolio-card {
     padding: 22px 22px 18px 22px !important;
-    display: flex !important;
+    display: flex;
     flex-direction: column !important;
     justify-content: flex-start !important;
     height: auto !important;
