@@ -266,7 +266,24 @@ document.addEventListener('DOMContentLoaded', () => {
             updatePortfolioSlider();
         });
 
+        // Auto-resize support when embedded via <iframe>
+        function notifyParentHeight() {
+            if (window.parent && window.parent !== window) {
+                const sectionEl = document.getElementById('portfolio') || document.body;
+                const height = Math.ceil(sectionEl.getBoundingClientRect().height);
+                window.parent.postMessage({ type: 'inatel-portfolio-resize', height: height }, '*');
+            }
+        }
+
+        if (typeof ResizeObserver !== 'undefined') {
+            const ro = new ResizeObserver(() => notifyParentHeight());
+            ro.observe(document.body);
+        }
+        window.addEventListener('load', notifyParentHeight);
+
         // Initialize
         filterPortfolio();
+        setTimeout(notifyParentHeight, 100);
     }
 });
+

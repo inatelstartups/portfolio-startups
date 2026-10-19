@@ -1,0 +1,28 @@
+<!-- ======================================================================
+     BLOCO EMBED (IFRAME) — PORTFÓLIO DE STARTUPS INATEL STARTUPS
+     Basta colar este código onde a seção "Portfólio de Startups" deve aparecer.
+     Qualquer atualização feita no GitHub refletirá automaticamente na página!
+     ====================================================================== -->
+<div id="inatel-portfolio-embed-wrapper" style="width: 100%; overflow: hidden;">
+    <iframe
+        id="inatel-portfolio-iframe"
+        src="https://inatelstartups.github.io/portfolio-startups/"
+        title="Portfólio de Startups - Inatel Startups"
+        style="width: 100%; min-height: 920px; border: none; display: block; background: transparent;"
+        scrolling="no"
+        loading="lazy"
+        allowtransparency="true"
+    ></iframe>
+</div>
+
+<script>
+    // Ajusta automaticamente a altura do iframe conforme a aba (Ideação, Pré-Incubação, Incubação, Graduadas) ou tela
+    window.addEventListener('message', function (event) {
+        if (event.data && event.data.type === 'inatel-portfolio-resize' && event.data.height) {
+            var iframe = document.getElementById('inatel-portfolio-iframe');
+            if (iframe) {
+                iframe.style.height = event.data.height + 'px';
+            }
+        }
+    });
+</script>
