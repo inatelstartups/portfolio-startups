@@ -4843,15 +4843,15 @@ footer {
 
 .portfolio-card p {
     display: -webkit-box !important;
-    -webkit-line-clamp: 7 !important;
+    -webkit-line-clamp: 9 !important;
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     height: auto !important;
     font-size: 13px !important;
-    line-height: 1.52 !important;
+    line-height: 1.54 !important;
     color: rgba(226, 232, 240, 0.82) !important;
-    margin: 0 0 12px 0 !important;
+    margin: 0 0 14px 0 !important;
     font-weight: 400;
 }
 
