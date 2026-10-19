@@ -4768,27 +4768,47 @@ footer {
     transform: scale(1.28) !important;
 }
 
-/* ================= PORTFOLIO CARD REFINEMENTS (FULL TEXT, LOCATION, LINKS) ================= */
+/* ================= PORTFOLIO CARD REFINEMENTS (DESIGN HARMONY & VERTICAL RHYTHM) ================= */
 .portfolio-track {
     align-items: stretch;
 }
 
 .portfolio-card {
+    padding: 22px 22px 18px 22px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
     height: auto !important;
     min-height: 430px;
+}
+
+.portfolio-header {
+    gap: 10px !important;
+    margin-bottom: 16px !important;
+}
+
+.portfolio-logo-container {
+    margin-bottom: 0 !important;
 }
 
 .portfolio-body {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1 1 auto;
 }
 
 .portfolio-card h4 {
-    margin: 18px 0 6px 0 !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 6px 0 !important;
     height: auto !important;
-    min-height: 20px;
+    min-height: 0 !important;
     line-height: 1.3 !important;
+    letter-spacing: -0.015em;
+    display: block !important;
+    overflow: visible !important;
+    -webkit-line-clamp: unset !important;
 }
 
 .portfolio-location {
@@ -4798,12 +4818,26 @@ footer {
     font-size: 11.5px;
     font-weight: 600;
     color: #94a3b8;
-    margin-bottom: 10px;
+    line-height: 1.25;
+    margin: 0 0 12px 0;
 }
 
 .portfolio-location svg {
     color: var(--primary);
     flex-shrink: 0;
+    transform: translateY(-0.5px);
+}
+
+.portfolio-card.ideation .portfolio-location svg {
+    color: #FACC15;
+}
+
+.portfolio-card.pre-incubated .portfolio-location svg {
+    color: #C084FC;
+}
+
+.portfolio-card.graduated .portfolio-location svg {
+    color: var(--text-blue);
 }
 
 .portfolio-card p {
@@ -4811,23 +4845,95 @@ footer {
     height: auto !important;
     overflow: visible !important;
     display: block !important;
-    font-size: 13.5px;
-    line-height: 1.58;
-    color: var(--text-muted);
-    margin-bottom: 16px;
+    font-size: 13.25px !important;
+    line-height: 1.62 !important;
+    color: rgba(226, 232, 240, 0.82) !important;
+    margin: 0 0 20px 0 !important;
+    font-weight: 400;
 }
 
+.portfolio-card p.portfolio-dates {
+    font-size: 12.5px !important;
+    line-height: 1.55 !important;
+    color: var(--text-muted) !important;
+    margin-top: 2px !important;
+}
+
+/* Unified Footer Row — exact same height, border, and vertical center on every card */
 .portfolio-links-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 12px;
     margin-top: auto;
-    padding-top: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 14px;
+    min-height: 36px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.portfolio-links-row a {
-    margin-top: 0 !important;
+.portfolio-links-row a.portfolio-link-item {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center;
+    gap: 5px !important;
+    font-size: 12.25px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    height: 22px;
+    margin: 0 !important;
+    padding: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-links-row a.portfolio-link-item span {
+    display: inline-block;
+    line-height: 1;
+}
+
+.portfolio-links-row a.portfolio-link-item .link-arrow-icon {
+    flex-shrink: 0;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-links-row a.portfolio-link-item .linkedin-icon {
+    flex-shrink: 0;
+    opacity: 0.9;
+    transform: translateY(-0.5px);
+}
+
+.portfolio-links-row a.portfolio-link-item:hover .link-arrow-icon {
+    transform: translateX(3px);
+}
+
+/* When both Site and LinkedIn exist, give LinkedIn a subtle secondary pill/tone so they don't clash */
+.portfolio-links-row.dual-links a.secondary-link {
+    color: #cbd5e1 !important;
+    font-weight: 600 !important;
+    padding: 4px 10px;
+    height: 26px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.portfolio-links-row.dual-links a.secondary-link:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.portfolio-links-row .portfolio-no-link {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(148, 163, 184, 0.55);
+    margin: 0 !important;
 }
