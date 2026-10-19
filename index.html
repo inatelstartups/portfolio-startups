@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Startups - Inatel Startups</title>
-    <link rel="stylesheet" href="style.css?v=25">
+    <link rel="stylesheet" href="style.css?v=28">
     <style>
         body {
             background-color: #030611;
@@ -33,182 +33,219 @@
                 <p>Conheça as startups em fase de Ideação, Pré-Incubação e Incubação. Confira também as empresas que já se graduaram no Inatel Startups.</p>
             </div>
 
-            <div class="portfolio-filters">
-                <button class="filter-btn" data-filter="ideation">Ideação</button>
-                <button class="filter-btn" data-filter="pre-incubated">Pré-Incubação</button>
-                <button class="filter-btn active" data-filter="incubated">Incubação</button>
-                <button class="filter-btn" data-filter="graduated">Graduadas</button>
-            </div>
-
-            <div class="portfolio-slider-container">
-                <button class="slider-arrow prev" id="portfolio-prev" aria-label="Anterior">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                </button>
-                
-                <div class="portfolio-viewport">
-                    <div class="portfolio-track" id="portfolio-track">
-                        <!-- START_PORTFOLIO_CARDS -->
-                <!-- CARD: Ideação - Apex Propulsion -->
-                <div class="portfolio-card ideation">
-                    <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
-                        <div class="portfolio-logo-container cover-bg" style="background-color: #4b4b4d;">
-                            <img src="elementos/logos/logo_apex_propulsion.png?v=5" alt="Logo da Apex Propulsion" class="portfolio-logo logo-cover" loading="lazy">
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Apex Propulsion</h4>
-                        <p>Satélites ainda dependem de xenônio caro e limitado. A Apex Propulsion desenvolve propulsão elétrica regenerativa que transforma água em empuxo através de célula de combustível + Hall thruster otimizado</p>
-                    </div>
-                    <a href="https://www.linkedin.com/company/apex-propulsion/?viewAsMember=true" target="_blank">Visitar site &rarr;</a>
-                </div>
-
                 <!-- CARD: Ideação - BRuxaria Games -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="1">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">FunTech</span><span class="portfolio-meta-pill pill-model">E-commerce</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #000000;">
                             <img src="elementos/logos/logo_bruxaria_games.png?v=5" alt="Logo da BRuxaria Games" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>BRuxaria Games</h4>
-                        <p>Estúdio de jogos digitais que impulsiona a economia criativa em Santa Rita do Sapucaí, com foco atual no desenvolvimento de um jogo Survival com potencial de viralização. No futuro, busca formar talentos e promover colaborações com a comunidade local e o INATEL.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Estúdio de jogos digitais que impulsiona a economia criativa em Santa Rita do Sapucaí, com foco atual no desenvolvimento de um jogo Survival com potencial de viralização. No futuro, busca formar talentos e promover colaborações com a comunidade local e o INATEL.</p>
                     </div>
-                    <a href="https://www.linkedin.com/in/pedro-henrique-mendes-siqueira-silva-a86329125/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="1">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/in/pedro-henrique-mendes-siqueira-silva-a86329125/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - Dyon -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="2">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">EventTech</span><span class="portfolio-meta-pill pill-model">D2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #010005;">
                             <img src="elementos/logos/logo_dyon.jpg?v=5" alt="Logo da Dyon" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Dyon</h4>
-                        <p>Dyon é uma plataforma para cerimonialistas que centraliza organização de eventos, controle financeiro, contratos e comunicação com clientes em um único sistema, reduzindo erros, atrasos e desorganização na realização de casamentos, formaturas e festas.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Dyon é uma plataforma para cerimonialistas que centraliza organização de eventos, controle financeiro, contratos e comunicação com clientes em um único sistema, reduzindo erros, atrasos e desorganização na realização de casamentos, formaturas e festas.</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="2">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - Farmtrip -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="3">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TravelTech</span><span class="portfolio-meta-pill pill-model">Marketplace</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_farmtrip.png?v=5" alt="Logo da Farmtrip" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Farmtrip</h4>
-                        <p>A Farmtrip é uma plataforma que conecta turistas a produtores rurais, facilitando a descoberta, reserva e gestão de experiências autênticas no campo, fortalecendo o turismo rural e gerando novas fontes de renda para propriedades rurais.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Pouso Alegre, MG</div>
+                        <p class="portfolio-desc">A Farmtrip é uma plataforma que conecta turistas a produtores rurais, facilitando a descoberta, reserva e gestão de experiências autênticas no campo, fortalecendo o turismo rural e gerando novas fontes de renda para propriedades rurais.</p>
                     </div>
-                    <a href="https://famtrip.com.br" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="3">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://famtrip.com.br" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - FiscalOS -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="4">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">RegTech</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_fiscalos.png?v=5" alt="Logo da FiscalOS" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>FiscalOS</h4>
-                        <p>Do que precisa ser feito ao resultado entregue, a operação roda no software. Não é mais uma ferramenta para organizar o trabalho. É onde o trabalho é feito.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Do que precisa ser feito ao resultado entregue, a operação roda no software. Não é mais uma ferramenta para organizar o trabalho. É onde o trabalho é feito.</p>
                     </div>
-                    <a href="https://fiscal-os.com/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="4">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://fiscal-os.com/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/fiscal-os/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - Impulse One AI -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="5">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HRTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_impulse_one_ai.png?v=5" alt="Logo da Impulse One AI" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Impulse One AI</h4>
-                        <p>Plataforma em nuvem com IA para avaliar, gerir e monitorar riscos psicossociais no trabalho, transformando dados em indicadores, dashboards, relatórios e planos de ação para apoiar empresas na NR-01 e na tomada de decisão em saúde e gestão de pessoas.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Plataforma em nuvem com IA para avaliar, gerir e monitorar riscos psicossociais no trabalho, transformando dados em indicadores, dashboards, relatórios e planos de ação para apoiar empresas na NR-01 e na tomada de decisão em saúde e gestão de pessoas.</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/impulse-solutions2025/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="5">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/impulse-solutions2025/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - Moneta -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="6">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_moneta.jpg?v=5" alt="Logo da Moneta" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Moneta</h4>
-                        <p>Sistema financeiro com IA para MEIs que simplifica a gestão do negócio por meio de linguagem natural, automatizando registros e análises financeiras e oferecendo indicadores, alertas e recomendações para apoiar decisões de forma simples e acessível.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Sistema financeiro com IA para MEIs que simplifica a gestão do negócio por meio de linguagem natural, automatizando registros e análises financeiras e oferecendo indicadores, alertas e recomendações para apoiar decisões de forma simples e acessível.</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="6">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - Roça Hub - Inteligência Agroalimentar -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="7">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">AgTech</span><span class="portfolio-meta-pill pill-model">Assinatura</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_roca_hub_inteligencia_agroalimentar.png?v=5" alt="Logo da Roça Hub - Inteligência Agroalimentar" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Roça Hub - Inteligência Agroalimentar</h4>
-                        <p>Roça Hub é uma plataforma de inteligência agroalimentar que conecta produtores, compradores e consumidores, organizando dados do território para aproximar a produção rural da demanda e fortalecer a agricultura regional.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>São João da Boa Vista, SP</div>
+                        <p class="portfolio-desc">Roça Hub é uma plataforma de inteligência agroalimentar que conecta produtores, compradores e consumidores, organizando dados do território para aproximar a produção rural da demanda e fortalecer a agricultura regional.</p>
                     </div>
-                    <a href="https://www.rocahub.com.br" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="7">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.rocahub.com.br" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/roca-hub" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - SaborERP -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="8">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">FoodTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_saborerp.jpg?v=5" alt="Logo da SaborERP" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>SaborERP</h4>
-                        <p>A SaborERP desenvolve uma plataforma de gestão inteligente para lanchonetes que integra PDV, estoque, financeiro e automação fiscal em um único sistema, reduzindo burocracia, desperdícios e ajudando empreendedores  a tomar decisões baseadas em dados</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Paraisópolis, MG</div>
+                        <p class="portfolio-desc">A SaborERP desenvolve uma plataforma de gestão inteligente para lanchonetes que integra PDV, estoque, financeiro e automação fiscal em um único sistema, reduzindo burocracia, desperdícios e ajudando empreendedores  a tomar decisões baseadas em dados</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/sabor-erp/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="8">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/sabor-erp/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - SIG AI -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="9">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">B2B2G</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_sig_ai.png?v=5" alt="Logo da SIG AI" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>SIG AI</h4>
-                        <p>Plataforma de ia para logística na saúde.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Plataforma de ia para logística na saúde.</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="9">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - STAYPASS -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="10">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">EventTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #000000;">
                             <img src="elementos/logos/logo_staypass.png?v=5" alt="Logo da STAYPASS" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>STAYPASS</h4>
-                        <p>O cartão magnético dos hotéis está prestes a se tornar obsoleto.
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Pouso Alegre, MG</div>
+                        <p class="portfolio-desc">O cartão magnético dos hotéis está prestes a se tornar obsoleto.
 
 A StayPass usa NFC para transformar qualquer smartphone em uma chave digital segura para hotéis, resorts e hospedagens de temporada.
 
@@ -217,895 +254,1321 @@ Mais conveniência para os hóspedes.
 
 Seu celular. Sua chave.</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="10">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - Tafira Automation -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="11">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">IndTech</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_tafira_automation.png?v=5" alt="Logo da Tafira Automation" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Tafira Automation</h4>
-                        <p>Empresa especializada em soluções de automação industrial, desenvolvendo soluções sob medida para aumentar a produtividade, reduzir custos e transformar processos industriais por meio da Indústria 4.0.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Empresa especializada em soluções de automação industrial, desenvolvendo soluções sob medida para aumentar a produtividade, reduzir custos e transformar processos industriais por meio da Indústria 4.0.</p>
                     </div>
-                    <a href="https://www.linkedin.com/in/tafira-automation-aa152842b/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="11">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/in/tafira-automation-aa152842b/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - TruckWay -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="12">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">MobiTech</span><span class="portfolio-meta-pill pill-model">B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #024db2;">
                             <img src="elementos/logos/logo_truckway.jpg?v=5" alt="Logo da TruckWay" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>TruckWay</h4>
-                        <p>Um app feito para caminhoneiros: descanso seguro, banho limpo, combustível confiável e viagens exclusivas. Solução prática para quem enfrenta desafios na estrada todos os dias!</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucai, MG</div>
+                        <p class="portfolio-desc">Um app feito para caminhoneiros: descanso seguro, banho limpo, combustível confiável e viagens exclusivas. Solução prática para quem enfrenta desafios na estrada todos os dias!</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="12">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Ideação - WO -->
-                <div class="portfolio-card ideation">
+                <div class="portfolio-card ideation" data-startup-idx="13">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag ideation">Ideação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag ideation">Ideação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">RegTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_wo.jpg?v=5" alt="Logo da WO" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>WO</h4>
-                        <p>A WO reduz falhas no controle de capacitações em construtoras, centralizando treinamentos, certificações e vencimentos. A plataforma cruza funções e atividades com NRs exigidas e alerta quando há pendências ou necessidade de renovação.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A WO reduz falhas no controle de capacitações em construtoras, centralizando treinamentos, certificações e vencimentos. A plataforma cruza funções e atividades com NRs exigidas e alerta quando há pendências ou necessidade de renovação.</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="13">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - AgrooCare -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="14">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">AgTech</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_agroocare.png?v=5" alt="Logo da AgrooCare" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>AgrooCare</h4>
-                        <p>A AgrooCare é uma solução inteligente que otimiza irrigação e adubação com sensores e IA, monitorando pH, nutrientes e clima em tempo real, reduzindo desperdícios e aumentando a produtividade.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A AgrooCare é uma solução inteligente que otimiza irrigação e adubação com sensores e IA, monitorando pH, nutrientes e clima em tempo real, reduzindo desperdícios e aumentando a produtividade.</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/agroocare/?viewAsMember=true" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="14">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/agroocare/?viewAsMember=true" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - AíPerto -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="15">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">RetailTech</span><span class="portfolio-meta-pill pill-model">B2B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_aiperto.png?v=5" alt="Logo da AíPerto" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>AíPerto</h4>
-                        <p>O AíPerto conecta consumidores ao varejo local com inteligência de preços e dados em tempo real, ajudando pessoas a economizar nas compras e negócios a aumentar visibilidade, entender seu mercado e tomar decisões melhores.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">O AíPerto conecta consumidores ao varejo local com inteligência de preços e dados em tempo real, ajudando pessoas a economizar nas compras e negócios a aumentar visibilidade, entender seu mercado e tomar decisões melhores.</p>
                     </div>
-                    <a href="https://aiperto.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="15">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://aiperto.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - Ajunta pra Ler -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="16">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">EdTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_ajunta_pra_ler.jpg?v=5" alt="Logo da Ajunta pra Ler" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Ajunta pra Ler</h4>
-                        <p>Plataforma SaaS que transforma livros digitais em comunidades vivas de leitura. Com leitor EPUB integrado, anotações colaborativas e grupos por idioma, o BookGroup conecta pessoas ao redor de livros com experiência social profunda e IA aplicada.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>São Paulo, SP</div>
+                        <p class="portfolio-desc">Plataforma SaaS que transforma livros digitais em comunidades vivas de leitura. Com leitor EPUB integrado, anotações colaborativas e grupos por idioma, o BookGroup conecta pessoas ao redor de livros com experiência social profunda e IA aplicada.</p>
                     </div>
-                    <a href="https://ajuntapraler.com.br" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="16">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://ajuntapraler.com.br" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/bookgroup/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - APP B2B -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="17">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_app_b2b.png?v=5" alt="Logo da APP B2B" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>APP B2B</h4>
-                        <p>Profissionalize sua operação B2B. Conecte sua indústria ou atacado ao varejo com um app intuitivo que organiza sua equipe e encanta seus clientes. Gerencie vendas em tempo real e eleve o padrão do seu atendimento. Eficiência para vender, simplicidade para crescer.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Lambari, MG</div>
+                        <p class="portfolio-desc">Profissionalize sua operação B2B. Conecte sua indústria ou atacado ao varejo com um app intuitivo que organiza sua equipe e encanta seus clientes. Gerencie vendas em tempo real e eleve o padrão do seu atendimento. Eficiência para vender, simplicidade para crescer.</p>
                     </div>
-                    <a href="https://appb2b.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="17">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://appb2b.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - BullVest -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="18">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">EdTech</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_bullvest.png?v=5" alt="Logo da BullVest" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>BullVest</h4>
-                        <p>A BullVest é uma plataforma de educação financeira gamificada desenvolvida para democratizar o acesso ao conhecimento sobre finanças pessoais e investimentos. A solução transforma conteúdos tradicionalmente complexos em uma experiência prática, intuitiva e interativa, utilizando quizzes, simuladores, desafios e missões educativas para engajar os usuários durante toda a jornada de aprendizado.
-
-O principal propósito da plataforma é combater a baixa alfabetização financeira, realidade presente na vida de milhões de brasileiros, oferecendo uma forma acessível e moderna de desenvolver competências financeiras essenciais para o dia a dia. Por meio da tecnologia e da gamificação, a BullVest incentiva o aprendizado contínuo, tornando o processo mais leve, motivador e eficiente.
-
-Mais do que ensinar conceitos financeiros, a plataforma busca gerar impacto social ao capacitar pessoas a tomarem decisões mais conscientes, planejadas e seguras sobre dinheiro, contribuindo para maior autonomia financeira, organização pessoal e construção de um futuro econômico mais sustentável.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A BullVest é uma plataforma de educação financeira gamificada desenvolvida para democratizar o acesso ao conhecimento sobre finanças pessoais e investimentos. A solução transforma conteúdos tradicionalmente complexos em uma experiência prática, intuitiva e interativa, utilizando quizzes, simuladores, desafios e missões educativas para engajar os usuários durante toda a jornada de aprendizado.</p>
                     </div>
-                    <a href="https://bullvest-application-web.vercel.app/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="18">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://bullvest-application-web.vercel.app/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/bullvest-educacao-financeira" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - Concilia Med -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="19">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">Assinatura</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #e8eff1;">
                             <img src="elementos/logos/logo_concilia_med.jpg?v=5" alt="Logo da Concilia Med" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Concilia Med</h4>
-                        <p>Médico trabalha, convênio paga menos do que deve — e ninguém percebe. A Fluxxa cruza cada procedimento com cada pagamento e mostra exatamente onde o dinheiro sumiu, antes que o prejuízo vire rotina.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Médico trabalha, convênio paga menos do que deve — e ninguém percebe. A Fluxxa cruza cada procedimento com cada pagamento e mostra exatamente onde o dinheiro sumiu, antes que o prejuízo vire rotina.</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/conciliai-med/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="19">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/conciliai-med/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - CrescCampo -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="20">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">AgTech</span><span class="portfolio-meta-pill pill-model">Assinatura</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #2e5939;">
                             <img src="elementos/logos/logo_cresccampo.png?v=5" alt="Logo da CrescCampo" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>CrescCampo</h4>
-                        <p>Gestão da fazenda no APP e WhatsApp.
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Gestão da fazenda no APP e WhatsApp.
 Manda um áudio: &quot;Gastei 620 no diesel.&quot; A IA lança no app por você. Funciona sem internet, sincroniza sozinho.
 Sem planilha. Sem complicação. Feito pro produtor rural brasileiro.</p>
                     </div>
-                    <a href="https://cresccampo.com.br" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="20">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://cresccampo.com.br" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/cresccampo" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - CresciX -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="21">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_crescix.jpg?v=5" alt="Logo da CresciX" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>CresciX</h4>
-                        <p>A CresciX e uma solução com I.A. integrada ao WhatsApp e Telegram, capaz de transcrever áudios, enviar dados  de maneira rápida e eficaz e controlar todo seu fluxo de caixa na palma da sua mão. Capaz de criar planilhas do zero, calcular gastos, lucro, tudo em questão de segundos para um maior controle financeiro.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A CresciX e uma solução com I.A. integrada ao WhatsApp e Telegram, capaz de transcrever áudios, enviar dados  de maneira rápida e eficaz e controlar todo seu fluxo de caixa na palma da sua mão. Capaz de criar planilhas do zero, calcular gastos, lucro, tudo em questão de segundos para um maior controle financeiro.</p>
                     </div>
-                    <a href="https://www.crescix.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="21">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.crescix.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - EcoSmart Sensors -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="22">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span><span class="portfolio-meta-pill pill-model">B2B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_ecosmart_sensors.png?v=5" alt="Logo da EcoSmart Sensors" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>EcoSmart Sensors</h4>
-                        <p>Entregamos saúde em tempo real e impacto ambiental zero com sensores confortáveis para humanos e pets, conectando ciência e cuidado.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita Do Sapucai, MG</div>
+                        <p class="portfolio-desc">Entregamos saúde em tempo real e impacto ambiental zero com sensores confortáveis para humanos e pets, conectando ciência e cuidado.</p>
                     </div>
-                    <a href="https://www.ecosmartsensors.com" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="22">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.ecosmartsensors.com" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/112174309/admin/dashboard/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - Eidos Tecnologia Digital -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="23">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">IndTech</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container dark-bg">
                             <img src="elementos/logos/logo_eidos_tecnologia_digital.png?v=5" alt="Logo da Eidos Tecnologia Digital" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Eidos Tecnologia Digital</h4>
-                        <p>aReader é uma IA aplicada à cotação industrial que interpreta desenhos técnicos 2D , estrutura a BoM, identifica e normaliza componentes e cruza Part Numbers com bases corporativas, reduzindo trabalho manual e o tempo de preparação das cotações, reduzindo o tempo de cotação de 2~3 semanas para 2 dias.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>São José dos Campos, SP</div>
+                        <p class="portfolio-desc">aReader é uma IA aplicada à cotação industrial que interpreta desenhos técnicos 2D , estrutura a BoM, identifica e normaliza componentes e cruza Part Numbers com bases corporativas, reduzindo trabalho manual e o tempo de preparação das cotações, reduzindo o tempo de cotação de 2~3 semanas para 2 dias.</p>
                     </div>
-                    <a href="https://www.eidostec.com.br/#" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="23">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.eidostec.com.br/#" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/eidostec/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - EMDR Tec -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="24">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #eff3f4;">
                             <img src="elementos/logos/logo_emdr_tec.jpg?v=5" alt="Logo da EMDR Tec" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>EMDR Tec</h4>
-                        <p>Empresa de produtos eletrônicos para utilização na psicoterapia EMDR, trazendo conforte e segurança na sessão</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Empresa de produtos eletrônicos para utilização na psicoterapia EMDR, trazendo conforte e segurança na sessão</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/108833362/admin/dashboard/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="24">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/108833362/admin/dashboard/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - Green Byte Solution -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="25">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">B2B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #64803b;">
                             <img src="elementos/logos/logo_green_byte_solution.png?v=5" alt="Logo da Green Byte Solution" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Green Byte Solution</h4>
-                        <p>A Green Byte Solution desenvolve biomateriais inteligentes para criar soluções sustentáveis, unindo tecnologia, inovação e impacto social para resolver problemas reais de forma acessível.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A Green Byte Solution desenvolve biomateriais inteligentes para criar soluções sustentáveis, unindo tecnologia, inovação e impacto social para resolver problemas reais de forma acessível.</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/greenbytesolution" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="25">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/greenbytesolution" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - HidroSense -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="26">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">AgTech</span><span class="portfolio-meta-pill pill-model">B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container dark-bg">
                             <img src="elementos/logos/logo_hidrosense.png?v=5" alt="Logo da HidroSense" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>HidroSense</h4>
-                        <p>Transformamos o cultivo hidropônico com hardware inteligente + app móvel para monitorar pH, temperatura e condutividade elétrica em tempo real. Mais controle, menos desperdício e maior eficiência para produtores aumentarem sua produtividade.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Transformamos o cultivo hidropônico com hardware inteligente + app móvel para monitorar pH, temperatura e condutividade elétrica em tempo real. Mais controle, menos desperdício e maior eficiência para produtores aumentarem sua produtividade.</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="26">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - MAI -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="27">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">Cybersecurity</span><span class="portfolio-meta-pill pill-model">B2B</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_mai.png?v=5" alt="Logo da MAI" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>MAI</h4>
-                        <p>Uma plataforma que une dados cadastrais, indicadores financeiros, fontes OSINT e inteligência artificial para entregar pontuações confiáveis e relatórios completos de avaliação empresarial.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Uma plataforma que une dados cadastrais, indicadores financeiros, fontes OSINT e inteligência artificial para entregar pontuações confiáveis e relatórios completos de avaliação empresarial.</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/mai-metrics-analysis-intelligence/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="27">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/mai-metrics-analysis-intelligence/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - Medlupi -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="28">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">B2B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #151c20;">
                             <img src="elementos/logos/logo_medlupi.png?v=5" alt="Logo da Medlupi" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Medlupi</h4>
-                        <p>A Medlupi é um sistema para clínicas que unifica agenda, prontuário e financeiro em um só lugar, eliminando processos manuais e aumentando a eficiência da operação, para que profissionais de saúde foquem no atendimento, não na burocracia.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A Medlupi é um sistema para clínicas que unifica agenda, prontuário e financeiro em um só lugar, eliminando processos manuais e aumentando a eficiência da operação, para que profissionais de saúde foquem no atendimento, não na burocracia.</p>
                     </div>
-                    <a href="https://medlupi.com" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="28">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://medlupi.com" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/medlupi" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - MentisTech -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="29">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">B2B2G</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_mentistech.png?v=5" alt="Logo da MentisTech" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>MentisTech</h4>
-                        <p>A MentisTech usa IA para ajudar empresas na adequação à NR-1 através do mapeamento de riscos psicossociais, relatórios inteligentes e programas de saúde mental, reduzindo afastamentos, passivos trabalhistas e melhorando o bem-estar dos colaboradores.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A MentisTech usa IA para ajudar empresas na adequação à NR-1 através do mapeamento de riscos psicossociais, relatórios inteligentes e programas de saúde mental, reduzindo afastamentos, passivos trabalhistas e melhorando o bem-estar dos colaboradores.</p>
                     </div>
-                    <a href="https://www.mentistech.com.br" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="29">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.mentistech.com.br" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/mentistech/?viewAsMember=true" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - MoviRider -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="30">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TravelTech</span><span class="portfolio-meta-pill pill-model">Marketplace</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_movirider.png?v=5" alt="Logo da MoviRider" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>MoviRider</h4>
-                        <p>A MoviRider resolve a jornada fragmentada de quem viaja de moto ao reunir, em uma só plataforma, planejamento com IA, rotas, reservas, experiências, comunidade e apoio na estrada - reduzindo o improviso e aumentando a segurança antes, durante e depois da viagem.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">A MoviRider resolve a jornada fragmentada de quem viaja de moto ao reunir, em uma só plataforma, planejamento com IA, rotas, reservas, experiências, comunidade e apoio na estrada - reduzindo o improviso e aumentando a segurança antes, durante e depois da viagem.</p>
                     </div>
-                    <a href="https://motoviagens.com.br" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="30">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://motoviagens.com.br" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - POA - PlanOptmizeAuto -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="31">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_poa_planoptmizeauto.jpg?v=5" alt="Logo da POA - PlanOptmizeAuto" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>POA - PlanOptmizeAuto</h4>
-                        <p>Software que oferece recomendações de diagnóstico e organização de processos em diferentes especialidades da Odontologia para otimização dos resultados clínicos e administrativos.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>São João del Rey, MG</div>
+                        <p class="portfolio-desc">Software que oferece recomendações de diagnóstico e organização de processos em diferentes especialidades da Odontologia para otimização dos resultados clínicos e administrativos.</p>
                     </div>
-                    <a href="https://www.linkedin.com/company/poa-planooptmizeautomation/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="31">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.linkedin.com/company/poa-planooptmizeautomation/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - qolop -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="32">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">XR Tech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #000000;">
                             <img src="elementos/logos/logo_qolop.png?v=5" alt="Logo da qolop" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>qolop</h4>
-                        <p>Transformamos ambientes reais em ambientes virtuais com experiências digitais interativas, combinando visualização imersiva, divulgação geolocalizada e analytics para ampliar visibilidade, conectar pessoas aos espaços e gerar inteligência estratégica para seus gestores.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Transformamos ambientes reais em ambientes virtuais com experiências digitais interativas, combinando visualização imersiva, divulgação geolocalizada e analytics para ampliar visibilidade, conectar pessoas aos espaços e gerar inteligência estratégica para seus gestores.</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="32">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - RastreaMed - Informações de Saúde Rastreadas -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="33">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_rastreamed_informacoes_de_saude_rastreadas.jpg?v=5" alt="Logo da RastreaMed - Informações de Saúde Rastreadas" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>RastreaMed - Informações de Saúde Rastreadas</h4>
-                        <p>RastreaMed - Plataforma de Rastreabilidade e Integração dos dados essenciais de Saúde, conectando médico, paciente e atendimento, garantindo agilidade e precisão em situações de emergência</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">RastreaMed - Plataforma de Rastreabilidade e Integração dos dados essenciais de Saúde, conectando médico, paciente e atendimento, garantindo agilidade e precisão em situações de emergência</p>
                     </div>
-                    <a href="https://rastreamed.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="33">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://rastreamed.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/rastreamed" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - Tritium Tech -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="34">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">Wellness</span><span class="portfolio-meta-pill pill-model">Assinatura</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_tritium_tech.png?v=5" alt="Logo da Tritium Tech" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Tritium Tech</h4>
-                        <p>Plataforma completa de gestão e prescrição para personal trainers: cadastre alunos, registre medidas, acompanhe evolução e prescreva treinos personalizados em um só lugar. Com IA que gera dietas adaptadas a partir das avaliações dos alunos, o personal aumenta o valor entregue e cria uma nova fonte de receita sem sair do app.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Plataforma completa de gestão e prescrição para personal trainers: cadastre alunos, registre medidas, acompanhe evolução e prescreva treinos personalizados em um só lugar. Com IA que gera dietas adaptadas a partir das avaliações dos alunos, o personal aumenta o valor entregue e cria uma nova fonte de receita sem sair do app.</p>
                     </div>
-                    <a href="https://linkedin.com/company/tritium" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="34">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://linkedin.com/company/tritium" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Pré-Incubação - URUK SOFTWARES -->
-                <div class="portfolio-card pre-incubated">
+                <div class="portfolio-card pre-incubated" data-startup-idx="35">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag pre-incubated">Pré-Incubação</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">Cybersecurity</span><span class="portfolio-meta-pill pill-model">B2C</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_uruk_softwares.png?v=5" alt="Logo da URUK SOFTWARES" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>URUK SOFTWARES</h4>
-                        <p>Inteligencia em Sistemas de Ciberseguranca. Protecao unificada para ISPs e datacenters - deteccao, resposta e conformidade em uma arquitetura integrada.Uma camada inteligente de DevSecOps para infraestrutura critica</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Inteligencia em Sistemas de Ciberseguranca. Protecao unificada para ISPs e datacenters - deteccao, resposta e conformidade em uma arquitetura integrada.Uma camada inteligente de DevSecOps para infraestrutura critica</p>
                     </div>
-                    <a href="https://uruk.one/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="35">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://uruk.one/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/in/flavio-rodrigo-leonel-26839256/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Incubadas - IoTronic -->
-                <div class="portfolio-card incubated">
+                <div class="portfolio-card incubated" data-startup-idx="36">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag incubated">Incubadas</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag incubated">Incubadas</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">IndTech</span><span class="portfolio-meta-pill pill-model">Assinatura</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_iotronic.png?v=5" alt="Logo da IoTronic" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>IoTronic</h4>
-                        <p>Solução de IoT industrial com IA que captura dados reais das máquinas, monitora a produção em tempo real e transforma paradas, tempos e produtividade em insights para reduzir perdas e aumentar a eficiência no chão de fábrica.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Solução de IoT industrial com IA que captura dados reais das máquinas, monitora a produção em tempo real e transforma paradas, tempos e produtividade em insights para reduzir perdas e aumentar a eficiência no chão de fábrica.</p>
                     </div>
-                    <a href="https://iotronic.com.br" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="36">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://iotronic.com.br" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://br.linkedin.com/company/iotronicbrasil" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Incubadas - Mulher em Forma -->
-                <div class="portfolio-card incubated">
+                <div class="portfolio-card incubated" data-startup-idx="37">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag incubated">Incubadas</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag incubated">Incubadas</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">Wellness</span><span class="portfolio-meta-pill pill-model">Assinatura</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_mulher_em_forma.png?v=5" alt="Logo da Mulher em Forma" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Mulher em Forma</h4>
-                        <p>Plataforma digital de emagrecimento e bem-estar feminino que combina treinos, planos alimentares e IA para personalizar a jornada da usuária, aumentando adesão, resultados e retenção.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Santa Rita do Sapucaí, MG</div>
+                        <p class="portfolio-desc">Plataforma digital de emagrecimento e bem-estar feminino que combina treinos, planos alimentares e IA para personalizar a jornada da usuária, aumentando adesão, resultados e retenção.</p>
                     </div>
-                    <a href="https://mulheremforma.com/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="37">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://mulheremforma.com/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a><a href="https://www.linkedin.com/company/mulheremforma/" target="_blank" class="portfolio-ext-link linkedin-link" onclick="event.stopPropagation();" title="LinkedIn">in</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Incubadas - Vektor Fitness -->
-                <div class="portfolio-card incubated">
+                <div class="portfolio-card incubated" data-startup-idx="38">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag incubated">Incubadas</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag incubated">Incubadas</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">SportsTech</span><span class="portfolio-meta-pill pill-model">SaaS</span></div>
+                        </div>
                         <div class="portfolio-logo-container dark-bg">
                             <img src="elementos/logos/logo_vektor_fitness.png?v=5" alt="Logo da Vektor Fitness" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
+                    <div class="portfolio-body">
                         <h4>Vektor Fitness</h4>
-                        <p>Vektor Fitness: empresa brasileira focada no fitness e esportivo, que integra tecnologia e hardware para academias e clubes. Com Vektor Pulse (SaaS de monitoramento cardíaco em tempo real) e soluções como Jump e Speed, entrega dados precisos para otimizar treinos e reduzir riscos.</p>
+                        <div class="portfolio-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Pousa Alegre, MG</div>
+                        <p class="portfolio-desc">Vektor Fitness: empresa brasileira focada no fitness e esportivo, que integra tecnologia e hardware para academias e clubes. Com Vektor Pulse (SaaS de monitoramento cardíaco em tempo real) e soluções como Jump e Speed, entrega dados precisos para otimizar treinos e reduzir riscos.</p>
                     </div>
-                    <a href="https://www.jftecnologiafitness.com/fitclube/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="38">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.jftecnologiafitness.com/fitclube/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - 4intelligence -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="39">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #4c94ff;">
                             <img src="elementos/logos/logo_4intelligence.jpg?v=5" alt="Logo da 4intelligence" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>4intelligence</h4><p class="portfolio-dates">Incubação: 11/2016 <br> Graduação: 11/2019</p>
+                    <div class="portfolio-body">
+                        <h4>4intelligence</h4>
+                        <p class="portfolio-dates">Incubação: 11/2016 &bull; Graduação: 11/2019</p>
                     </div>
-                    <a href="https://www.4intelligence.ai/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="39">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.4intelligence.ai/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Agrorigem -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="40">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">AgTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_agrorigem.jpg?v=5" alt="Logo da Agrorigem" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Agrorigem</h4><p class="portfolio-dates">Incubação: 01/2019 <br> Graduação: 01/2020</p>
+                    <div class="portfolio-body">
+                        <h4>Agrorigem</h4>
+                        <p class="portfolio-dates">Incubação: 01/2019 &bull; Graduação: 01/2020</p>
                     </div>
-                    <a href="http://agrorigem.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="40">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="http://agrorigem.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - AGTechnologies -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="41">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">IndTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_agtechnologies.jpg?v=5" alt="Logo da AGTechnologies" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>AGTechnologies</h4><p class="portfolio-dates">Incubação: 04/2005 <br> Graduação: 05/2007</p>
+                    <div class="portfolio-body">
+                        <h4>AGTechnologies</h4>
+                        <p class="portfolio-dates">Incubação: 04/2005 &bull; Graduação: 05/2007</p>
                     </div>
-                    <a href="https://agtdisplays.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="41">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://agtdisplays.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Alba Energia Solar -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="42">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">EnergyTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_alba_energia_solar.jpg?v=5" alt="Logo da Alba Energia Solar" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Alba Energia Solar</h4><p class="portfolio-dates">Incubação: 05/2011 <br> Graduação: 05/2013</p>
+                    <div class="portfolio-body">
+                        <h4>Alba Energia Solar</h4>
+                        <p class="portfolio-dates">Incubação: 05/2011 &bull; Graduação: 05/2013</p>
                     </div>
-                    <a href="https://albaenergia.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="42">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://albaenergia.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Amicus -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="43">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">PetTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_amicus.png?v=5" alt="Logo da Amicus" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Amicus</h4><p class="portfolio-dates">Incubação: 10/2004 <br> Graduação: 07/2007</p>
+                    <div class="portfolio-body">
+                        <h4>Amicus</h4>
+                        <p class="portfolio-dates">Incubação: 10/2004 &bull; Graduação: 07/2007</p>
                     </div>
-                    <a href="https://amicus.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="43">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://amicus.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Amiko Soluções -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="44">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_amiko_solucoes.png?v=5" alt="Logo da Amiko Soluções" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Amiko Soluções</h4><p class="portfolio-dates">Incubação: 05/2022 <br> Graduação: 12/2025</p>
+                    <div class="portfolio-body">
+                        <h4>Amiko Soluções</h4>
+                        <p class="portfolio-dates">Incubação: 05/2022 &bull; Graduação: 12/2025</p>
                     </div>
-                    <a href="https://amikosolucoes.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="44">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://amikosolucoes.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - ATIVA Soluções Tecnológicas -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="45">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span></div>
+                        </div>
                         <div class="portfolio-logo-container cover-bg" style="background-color: #9e0b22;">
                             <img src="elementos/logos/logo_ativa_solucoes_tecnologicas.jpg?v=5" alt="Logo da ATIVA Soluções Tecnológicas" class="portfolio-logo logo-cover" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>ATIVA Soluções Tecnológicas</h4><p class="portfolio-dates">Incubação: 04/2004 <br> Graduação: 04/2007</p>
+                    <div class="portfolio-body">
+                        <h4>ATIVA Soluções Tecnológicas</h4>
+                        <p class="portfolio-dates">Incubação: 04/2004 &bull; Graduação: 04/2007</p>
                     </div>
-                    <a href="https://ativasolucoes.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="45">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://ativasolucoes.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - BEHIVE Tecnologia -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="46">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TelcoTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #f1f1f1;">
                             <img src="elementos/logos/logo_behive_tecnologia.jpg?v=5" alt="Logo da BEHIVE Tecnologia" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>BEHIVE Tecnologia</h4><p class="portfolio-dates">Incubação: 12/2013 <br> Graduação: 11/2016</p>
+                    <div class="portfolio-body">
+                        <h4>BEHIVE Tecnologia</h4>
+                        <p class="portfolio-dates">Incubação: 12/2013 &bull; Graduação: 11/2016</p>
                     </div>
-                    <a href="https://www.behive.eng.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="46">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.behive.eng.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Biquad Broadcast -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="47">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TelcoTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_biquad_broadcast.jpg?v=5" alt="Logo da Biquad Broadcast" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Biquad Broadcast</h4><p class="portfolio-dates">Incubação: 06/2000 <br> Graduação: 05/2003</p>
+                    <div class="portfolio-body">
+                        <h4>Biquad Broadcast</h4>
+                        <p class="portfolio-dates">Incubação: 06/2000 &bull; Graduação: 05/2003</p>
                     </div>
-                    <a href="https://www.biquadbroadcast.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="47">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.biquadbroadcast.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Dágora -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="48">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">EdTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #302543;">
                             <img src="elementos/logos/logo_dagora.jpg?v=5" alt="Logo da Dágora" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Dágora</h4><p class="portfolio-dates">Incubação: 01/2016 <br> Graduação: 01/2019</p>
+                    <div class="portfolio-body">
+                        <h4>Dágora</h4>
+                        <p class="portfolio-dates">Incubação: 01/2016 &bull; Graduação: 01/2019</p>
                     </div>
-                    <span class="portfolio-no-link">Sem site ativo</span>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="48">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><span class="portfolio-no-link">Sem site</span></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Fábrica 3D -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="49">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">IndTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_fabrica_3d.jpg?v=5" alt="Logo da Fábrica 3D" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Fábrica 3D</h4><p class="portfolio-dates">Incubação: 12/2015 <br> Graduação: 12/2018</p>
+                    <div class="portfolio-body">
+                        <h4>Fábrica 3D</h4>
+                        <p class="portfolio-dates">Incubação: 12/2015 &bull; Graduação: 12/2018</p>
                     </div>
-                    <a href="https://fabrica3d.co/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="49">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://fabrica3d.co/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - FIT Networks -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="50">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">Cybersecurity</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_fit_networks.png?v=5" alt="Logo da FIT Networks" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>FIT Networks</h4><p class="portfolio-dates">Incubação: 02/2012 <br> Graduação: 06/2015</p>
+                    <div class="portfolio-body">
+                        <h4>FIT Networks</h4>
+                        <p class="portfolio-dates">Incubação: 02/2012 &bull; Graduação: 06/2015</p>
                     </div>
-                    <a href="https://fitnetworks.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="50">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://fitnetworks.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Fractum -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="51">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TelcoTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #014f97;">
                             <img src="elementos/logos/logo_fractum.jpg?v=5" alt="Logo da Fractum" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Fractum</h4><p class="portfolio-dates">Incubação: 08/2007 <br> Graduação: 09/2009</p>
+                    <div class="portfolio-body">
+                        <h4>Fractum</h4>
+                        <p class="portfolio-dates">Incubação: 08/2007 &bull; Graduação: 09/2009</p>
                     </div>
-                    <a href="https://www.fractum.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="51">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.fractum.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Irritron -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="52">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">AgTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_irritron.png?v=5" alt="Logo da Irritron" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Irritron</h4><p class="portfolio-dates">Incubação: 01/1998 <br> Graduação: 03/2000</p>
+                    <div class="portfolio-body">
+                        <h4>Irritron</h4>
+                        <p class="portfolio-dates">Incubação: 01/1998 &bull; Graduação: 03/2000</p>
                     </div>
-                    <a href="https://irritron.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="52">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://irritron.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Keymax -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="53">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">IndTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_keymax.png?v=5" alt="Logo da Keymax" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Keymax</h4><p class="portfolio-dates">Incubação: 12/2009 <br> Graduação: 12/2012</p>
+                    <div class="portfolio-body">
+                        <h4>Keymax</h4>
+                        <p class="portfolio-dates">Incubação: 12/2009 &bull; Graduação: 12/2012</p>
                     </div>
-                    <a href="https://www.keymax.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="53">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.keymax.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Legon -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="54">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">Wellness</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #c2d500;">
                             <img src="elementos/logos/logo_legon.jpg?v=5" alt="Logo da Legon" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Legon</h4><p class="portfolio-dates">Incubação: 12/2008 <br> Graduação: 04/2011</p>
+                    <div class="portfolio-body">
+                        <h4>Legon</h4>
+                        <p class="portfolio-dates">Incubação: 12/2008 &bull; Graduação: 04/2011</p>
                     </div>
-                    <a href="https://www.legon.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="54">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.legon.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Liveware -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="55">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_liveware.png?v=5" alt="Logo da Liveware" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Liveware</h4><p class="portfolio-dates">Incubação: 01/1991 <br> Graduação: 01/1993</p>
+                    <div class="portfolio-body">
+                        <h4>Liveware</h4>
+                        <p class="portfolio-dates">Incubação: 01/1991 &bull; Graduação: 01/1993</p>
                     </div>
-                    <a href="https://www.liveware.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="55">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.liveware.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Ludact -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="56">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">FunTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_ludact.jpg?v=5" alt="Logo da Ludact" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Ludact</h4><p class="portfolio-dates">Incubação: 04/2005 <br> Graduação: 09/2008</p>
+                    <div class="portfolio-body">
+                        <h4>Ludact</h4>
+                        <p class="portfolio-dates">Incubação: 04/2005 &bull; Graduação: 09/2008</p>
                     </div>
-                    <a href="https://ludact.com/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="56">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://ludact.com/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Lumenx -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="57">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">PropTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_lumenx.png?v=5" alt="Logo da Lumenx" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Lumenx</h4><p class="portfolio-dates">Incubação: 02/2013 <br> Graduação: 02/2016</p>
+                    <div class="portfolio-body">
+                        <h4>Lumenx</h4>
+                        <p class="portfolio-dates">Incubação: 02/2013 &bull; Graduação: 02/2016</p>
                     </div>
-                    <a href="https://lumenx.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="57">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://lumenx.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Maincore -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="58">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">IndTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_maincore.jpg?v=5" alt="Logo da Maincore" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Maincore</h4><p class="portfolio-dates">Incubação: 12/2021 <br> Graduação: 12/2025</p>
+                    <div class="portfolio-body">
+                        <h4>Maincore</h4>
+                        <p class="portfolio-dates">Incubação: 12/2021 &bull; Graduação: 12/2025</p>
                     </div>
-                    <a href="https://maincore.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="58">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://maincore.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Multi GIGA -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="59">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">PropTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #0050dd;">
                             <img src="elementos/logos/logo_multi_giga.jpg?v=5" alt="Logo da Multi GIGA" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Multi GIGA</h4><p class="portfolio-dates">Incubação: 07/2005 <br> Graduação: 08/2008</p>
+                    <div class="portfolio-body">
+                        <h4>Multi GIGA</h4>
+                        <p class="portfolio-dates">Incubação: 07/2005 &bull; Graduação: 08/2008</p>
                     </div>
-                    <a href="https://www.multigiga.com.vc/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="59">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.multigiga.com.vc/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Neoato -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="60">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">PropTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_neoato.jpg?v=5" alt="Logo da Neoato" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Neoato</h4><p class="portfolio-dates">Incubação: 07/2006 <br> Graduação: 12/2009</p>
+                    <div class="portfolio-body">
+                        <h4>Neoato</h4>
+                        <p class="portfolio-dates">Incubação: 07/2006 &bull; Graduação: 12/2009</p>
                     </div>
-                    <a href="https://neoato.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="60">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://neoato.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Neurobrinq -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="61">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #001741;">
                             <img src="elementos/logos/logo_neurobrinq.png?v=5" alt="Logo da Neurobrinq" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Neurobrinq</h4><p class="portfolio-dates">Incubação: 07/2017 <br> Graduação: 06/2019</p>
+                    <div class="portfolio-body">
+                        <h4>Neurobrinq</h4>
+                        <p class="portfolio-dates">Incubação: 07/2017 &bull; Graduação: 06/2019</p>
                     </div>
-                    <a href="https://neurobrinq.com/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="61">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://neurobrinq.com/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Nouvenn IoT -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="62">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">B2B Tech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #0099b6;">
                             <img src="elementos/logos/logo_nouvenn_iot.jpg?v=5" alt="Logo da Nouvenn IoT" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Nouvenn IoT</h4><p class="portfolio-dates">Incubação: 04/2016 <br> Graduação: 01/2019</p>
+                    <div class="portfolio-body">
+                        <h4>Nouvenn IoT</h4>
+                        <p class="portfolio-dates">Incubação: 04/2016 &bull; Graduação: 01/2019</p>
                     </div>
-                    <a href="https://www.nouvenn.com/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="62">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.nouvenn.com/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Nowigo -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="63">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">FunTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #000000;">
                             <img src="elementos/logos/logo_nowigo.jpg?v=5" alt="Logo da Nowigo" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Nowigo</h4><p class="portfolio-dates">Incubação: 07/2017 <br> Graduação: 02/2020</p>
+                    <div class="portfolio-body">
+                        <h4>Nowigo</h4>
+                        <p class="portfolio-dates">Incubação: 07/2017 &bull; Graduação: 02/2020</p>
                     </div>
-                    <a href="https://www.nowigo.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="63">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.nowigo.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Petcom -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="64">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TelcoTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #070a11;">
                             <img src="elementos/logos/logo_petcom.jpg?v=5" alt="Logo da Petcom" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Petcom</h4><p class="portfolio-dates">Incubação: 08/1999</p>
+                    <div class="portfolio-body">
+                        <h4>Petcom</h4>
+                        <p class="portfolio-dates">Incubação: 08/1999</p>
                     </div>
-                    <a href="https://www.petcom.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="64">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.petcom.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Protection -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="65">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">PropTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_protection.jpg?v=5" alt="Logo da Protection" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Protection</h4><p class="portfolio-dates">Incubação: 10/2006 <br> Graduação: 10/2008</p>
+                    <div class="portfolio-body">
+                        <h4>Protection</h4>
+                        <p class="portfolio-dates">Incubação: 10/2006 &bull; Graduação: 10/2008</p>
                     </div>
-                    <a href="https://protection.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="65">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://protection.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Qualitronix -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="66">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">PropTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #009fe3;">
                             <img src="elementos/logos/logo_qualitronix.jpg?v=5" alt="Logo da Qualitronix" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Qualitronix</h4><p class="portfolio-dates">Incubação: 09/1999 <br> Graduação: 09/2001</p>
+                    <div class="portfolio-body">
+                        <h4>Qualitronix</h4>
+                        <p class="portfolio-dates">Incubação: 09/1999 &bull; Graduação: 09/2001</p>
                     </div>
-                    <a href="http://www.qualitronix.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="66">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="http://www.qualitronix.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - RGaus -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="67">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">SportsTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #96cbe9;">
                             <img src="elementos/logos/logo_rgaus.png?v=5" alt="Logo da RGaus" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>RGaus</h4><p class="portfolio-dates">Incubação: 03/1998 <br> Graduação: 09/2001</p>
+                    <div class="portfolio-body">
+                        <h4>RGaus</h4>
+                        <p class="portfolio-dates">Incubação: 03/1998 &bull; Graduação: 09/2001</p>
                     </div>
-                    <a href="https://www.rgaus.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="67">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.rgaus.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Sanders -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="68">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">HealthTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_sanders.png?v=5" alt="Logo da Sanders" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Sanders</h4><p class="portfolio-dates">Incubação: 06/2003 <br> Graduação: 04/2005</p>
+                    <div class="portfolio-body">
+                        <h4>Sanders</h4>
+                        <p class="portfolio-dates">Incubação: 06/2003 &bull; Graduação: 04/2005</p>
                     </div>
-                    <a href="https://sandersdobrasil.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="68">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://sandersdobrasil.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Soil Tecnologia -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="69">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">AgTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #e3ebc6;">
                             <img src="elementos/logos/logo_soil_tecnologia.jpg?v=5" alt="Logo da Soil Tecnologia" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Soil Tecnologia</h4><p class="portfolio-dates">Incubação: 05/2021 <br> Graduação: 01/2024</p>
+                    <div class="portfolio-body">
+                        <h4>Soil Tecnologia</h4>
+                        <p class="portfolio-dates">Incubação: 05/2021 &bull; Graduação: 01/2024</p>
                     </div>
-                    <a href="http://www.soiltech.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="69">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="http://www.soiltech.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - Think Technology -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="70">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TelcoTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container" style="background-color: #eaedf2;">
                             <img src="elementos/logos/logo_think_technology.jpg?v=5" alt="Logo da Think Technology" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>Think Technology</h4><p class="portfolio-dates">Incubação: 02/2012 <br> Graduação: 06/2015</p>
+                    <div class="portfolio-body">
+                        <h4>Think Technology</h4>
+                        <p class="portfolio-dates">Incubação: 02/2012 &bull; Graduação: 06/2015</p>
                     </div>
-                    <a href="http://www.tkth.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="70">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="http://www.tkth.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
 
                 <!-- CARD: Graduada - TSDA -->
-                <div class="portfolio-card graduated">
+                <div class="portfolio-card graduated" data-startup-idx="71">
                     <div class="portfolio-header">
-                        <span class="portfolio-tag graduated">Graduada</span>
+                        <div class="portfolio-meta-top">
+                            <span class="portfolio-tag graduated">Graduada</span>
+                            <div class="portfolio-badges"><span class="portfolio-meta-pill">TelcoTech</span></div>
+                        </div>
                         <div class="portfolio-logo-container">
                             <img src="elementos/logos/logo_tsda.jpg?v=5" alt="Logo da TSDA" class="portfolio-logo" loading="lazy">
                         </div>
                     </div>
-                    <div>
-                        <h4>TSDA</h4><p class="portfolio-dates">Incubação: 10/2001 <br> Graduação: 03/2004</p>
+                    <div class="portfolio-body">
+                        <h4>TSDA</h4>
+                        <p class="portfolio-dates">Incubação: 10/2001 &bull; Graduação: 03/2004</p>
                     </div>
-                    <a href="https://www.tsda.com.br/" target="_blank">Visitar site &rarr;</a>
+                    <div class="portfolio-footer">
+                        <button type="button" class="portfolio-details-btn" data-startup-idx="71">+ Ficha completa</button>
+                        <div class="portfolio-links-group"><a href="https://www.tsda.com.br/" target="_blank" class="portfolio-ext-link" onclick="event.stopPropagation();">Site &rarr;</a></div>
+                    </div>
                 </div>
                 <!-- END_PORTFOLIO_CARDS -->
             </div>
@@ -1129,6 +1592,6 @@ Sem planilha. Sem complicação. Feito pro produtor rural brasileiro.</p>
         </div>
     </section>
 
-    <script src="portfolio.js?v=1"></script>
+    <script src="portfolio.js?v=4"></script>
 </body>
 </html>
